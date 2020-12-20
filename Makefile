@@ -1,4 +1,4 @@
-all:sort Linkstack queue1 queue2
+all:sort Linkstack queue1 queue2 hos search
 sort:sort.c testsort.c
 	gcc sort.c testsort.c -o sort
 
@@ -21,3 +21,13 @@ queue2:queue2.c testqueue2.c
 
 clean:
 	rm queue2
+
+hos:hos.c hosmain.c
+	g++ hos.c hosmain.c -o hos
+clean:
+	rm hos
+
+search:search.c testsearch.c
+	g++ search.c testsearch.c -o search
+clean:
+	rm search
