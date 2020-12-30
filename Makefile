@@ -1,4 +1,4 @@
-all:sort Linkstack queue1 queue2 hos search
+all:sort Linkstack queue1 queue2 hos search hafu Bintree
 sort:sort.c testsort.c
 	gcc sort.c testsort.c -o sort
 
@@ -31,3 +31,13 @@ search:search.c testsearch.c
 	g++ search.c testsearch.c -o search
 clean:
 	rm search
+
+hafu:hafu.c testhafu.c
+	g++ hafu.c testhafu.c -o hafu
+clean:
+	rm hafu
+
+Bintree:Bintree.c testBintree.c
+	g++ Bintree.c testBintree.c -o Bintree
+clean:
+	rm Bintree
